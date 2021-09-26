@@ -18,14 +18,10 @@
 // xxxx.xxxx = helloSpeaker;
 
 
-(function(window) {
-  var helloSpeaker = new Object();
-  var speakWord = "Hello";
-  helloSpeaker.speak = function(name) {
-      console.log(speakWord + " " + name);
-  };
-  window.helloSpeaker = helloSpeaker;
-})(window);
-
-
-
+(function(){
+  var SpeakHello= "Hello";
+  var sayHello=function(name){
+    console.log(SpeakHello +" " +name);
+  }
+this.sayHello=sayHello;  
+})();
